@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Animated Blobs -->
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  
+  <header>
+    <div class="header-container">
+      <h1>Read Tracker</h1>
+    <!-- <p>By Divinka Azani Rachdian</p> -->
+    </div>
+  </header>
+  <main>
+    <section id="inputBook">
+      <div class="input-container">
+        <h2>Tambah ke rak</h2>
+      <form id="bookForm" data-testid="bookForm">
+        <input type="text" id="bookFormTitleInput" placeholder="Judul Buku" data-testid="bookFormTitleInput" required>
+        <input type="text" id="bookFormAuthorInput" placeholder="Penulis" data-testid="bookFormAuthorInput" required>
+        <input type="number" id="bookFormYearInput" placeholder="Tahun Terbit" data-testid="bookFormYearInput" required>
+        <label>
+            <input type="checkbox" id="bookFormIsCompleteCheckbox" data-testid="bookFormIsCompleteCheckbox"> Selesai dibaca
+        </label>
+        <button type="submit" data-testid="bookFormSubmitButton">Masukkan buku ke dalam rak</button>
+      </form>
+      </div>    
+    </section>
+
+    <div class="center-container">
+      <form id="searchBookForm" data-testid="searchBookForm">
+        <input type="text" id="searchBookTitle" placeholder="Cari buku berdasarkan judul..." data-testid="searchBookFormTitleInput">
+        <button type="submit" data-testid="searchBookFormSubmitButton">Cari</button>
+      </form>
+    
+      <section id="book-list">
+        <div class="book-column">
+          <h2>Belum Selesai Dibaca</h2>
+          <div id="incompleteBookList" data-testid="incompleteBookList"></div>
+        </div>
+      
+        <div class="book-column">
+          <h2>Sudah Selesai Dibaca</h2>
+          <div id="completeBookList" data-testid="completeBookList"></div>
+        </div>
+      </section>
+  </main>
+
+  <!-- Modal Notifikasi -->
+  <div id="modal" class="modal">
+    <p>Buku berhasil ditambahkan!</p>
+  </div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/localStorage.js"></script>
+</body>
+</html>
