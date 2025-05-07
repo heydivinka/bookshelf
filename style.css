@@ -1,11 +1,11 @@
 @font-face {
-  src: url('/src/assets/fonts/SF-Pro-Display-Medium.otf');
+  src: url('SF-Pro-Display-Medium.otf');
   font-family: 'SF Pro' format(opentype);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  src: url('/src/assets/fonts/Switzer-Extrabold.otf');
+  src: url('Switzer-Extrabold.otf');
   font-family: 'Switzer' format(opentype);
   font-weight: normal;
   font-style: normal;
