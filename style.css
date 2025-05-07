@@ -1,11 +1,11 @@
 @font-face {
-  src: url('SF-Pro-Display-Medium.otf');
+  src: url('/src/assets/fonts/SF-Pro-Display-Medium.otf');
   font-family: 'SF Pro' format(opentype);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  src: url('Switzer-Extrabold.otf');
+  src: url('/src/assets/fonts/Switzer-Extrabold.otf');
   font-family: 'Switzer' format(opentype);
   font-weight: normal;
   font-style: normal;
@@ -397,6 +397,10 @@ header {
     }
   }
   @media screen and (max-width: 600px) {
+body {
+  overflow-x: hidden;
+}
+
     .header h1 {
       font-size: 16px;
       margin-top: 40px;
